@@ -1,0 +1,13 @@
+{
+  "watch": ["src", ".env"],
+  "ext": "ts, json",
+  "ignore": ["node_modules", "dist", ".git"],
+  "exec": "concurrently --kill-others \"npm run dev:start:app\" \"npm run dev:start:worker\"",
+  "delay": "2500",
+  "verbose": true,
+  "legacy-watch": true,
+  "restartable": true,
+  "events": {
+    "start": "cls && echo 'Starting server...'"
+  }
+}

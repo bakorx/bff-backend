@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "nodenext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "typeRoots": ["./src/@types", "./node_modules/@types"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.d.ts",
+    "src/mail/templates/index.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
